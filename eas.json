@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 0.52.0"
+  },
+  "build": {
+    "local": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": { "APP_VARIANT": "local" },
+      "channel": "local"
+    },
+    "dev": {
+      "distribution": "internal",
+      "env": { "APP_VARIANT": "dev" },
+      "channel": "dev"
+    },
+    "stage": {
+      "distribution": "internal",
+      "env": { "APP_VARIANT": "stage" },
+      "channel": "stage"
+    },
+    "production": {
+      "env": { "APP_VARIANT": "production" },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
