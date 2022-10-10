@@ -3,6 +3,12 @@
     "version": ">= 0.52.0"
   },
   "build": {
+    "local-simulator": {
+      "ios": { "simulator": true },
+      "developmentClient": true,
+      "env": { "APP_VARIANT": "local" },
+      "channel": "local"
+    },
     "local": {
       "developmentClient": true,
       "distribution": "internal",
